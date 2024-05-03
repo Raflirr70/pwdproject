@@ -487,3 +487,14 @@ div.who > div.whoconten > div.tombol:hover > label {
     font-size: 28px;
     transition: all 0.6s ease;
 }
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 999;
+}

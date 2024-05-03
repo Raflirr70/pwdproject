@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="csswebrafli.css">
+    <script src="js.js"></script>
 </head>
 <body>
     <div class="Container">
@@ -31,11 +32,20 @@
                         <div><p class="p2">&#9658</p></div>
                         <div><p class="p3">&#9658</p></div>
                         <p> PLAY SHOWREAL</p>
+                        <div class="popup">
+                            <!-- Konten popup di sini -->
+                            <h2>Video Player</h2>
+                            <video controls autoplay>
+                                <source src="path_to_your_video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <button onclick="hidePopup()">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
-
+        
         <div class="who">
             <div class="whoconten">
                 <hr>
@@ -272,5 +282,11 @@
             </div>
         </div>
     </div>
+    <script>
+        function hidePopup() {
+            const videoPopup = document.querySelector(".judul .playd .play .popup");
+            videoPopup.style.display = "none";
+        }
+    </script>
 </body>
 </html>
